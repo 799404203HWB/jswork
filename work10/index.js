@@ -21,7 +21,7 @@ function monkey(){
     }
     document.getElementById('monkeyking').innerText = monkey[0]
 }
-function stat(){
+/*function stat(){
     let str = document.getElementById("str").value
     let obj = {}
     var i = 0;
@@ -39,4 +39,15 @@ function stat(){
 	}
 
     document.getElementById('result').innerText =JSON.stringify(obj)
+}*/
+
+function stat(){
+    let str = document.getElementById("str").value
+    let obj = {}
+    arr= str.split("")
+    arr.sort()
+    for (var i = 0;i < str.length; i++){
+        obj[arr[i]] = (obj[arr[i]]+1) || 1;
+    }
+    document.getElementById('result').innerText = JSON.stringify(obj)
 }
