@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsrt="UTF-8">
+        <title>计算圆的周长和面积</title>
+    <div>
+      <p>圆的半径:<input id="r" type="text"></p>
+      <p>圆的周长:<input id="cir" type="text"></p>
+      <p>圆的面积：<input id="area" type="text"></p>
+    </div>
+    </head>
+<body>
+    <script>
+        var r = prompt('请输入圆的半径');
+        r = parseFloat(r) && Number(r) ; //检测是否是有效数字
+        if(!isNaN(r))/*isNAN(value) value要被检测的值 NaN该属性用于指示某个值不是数字 !isNAN是数字   */{
+            var cir = 2 * Math.PI * r ;
+            var area = Math.PI * r * r;
+            document.getElementById('r').value = r ;
+            document.getElementById('cir').value = cir.toFixed(2) ;
+         // 获得元素的值                                保留两位小数
+            document.getElementById('area').value = area.toFixed(2) ;
+        }else{
+            alert('请输入正确的圆的半径')
+        }
+
+    </script>
+   
+</body>
+</html>
