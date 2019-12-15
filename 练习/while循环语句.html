@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charsrt="UTF-8">
+    </head>
+<body>
+    <script>
+        //1到100
+       var n = 1;  //循环变量的初始化
+       while(n<=100 /*循环条件的判断*/){
+           //循环体
+           document.write(n+"<br>")
+           n++  ///循环变量的改变
+       }
+
+
+
+       //1到100 的偶数
+       var i = 1;
+       while(i<=100){
+    /*寻找偶数，如果是偶数就输出*/  if (i%2==0){
+            document.write(i+" ")
+           }
+           i++
+       }
+
+
+    // //1到100的奇数
+      var l = 1;
+          while(l<=100){
+   /*寻个找奇数*/        if(l%2!==0){
+                document.write(l+" ")
+           }
+          l++
+       }
+
+
+       //1到100所以数字的和
+       var p = 1;
+       var he = 0;  //表示总和为0
+       while(p<=100){
+          he=he+p;//he=1,he=3,he=6
+          p++;
+       }
+       document.write("总和"+he);
+       //求和思想
+       //1:找一个变量来记录总和
+       //2:把前一次的和加上新的值在赋值给变量
+    </script>
+
+</body>
+</html>
