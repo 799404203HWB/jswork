@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charsrt="UTF-8">
+    </head>
+<body>
+    <script>
+        var he = 0;
+        var i =  1;
+        while(i<=100){
+            if(i % 10==9){
+                i++;//如果是9的话，这是不能使用i++，会进入死循环
+                continue;/*立即结束本次循环，开始下一个循环。(如果现在是第九次，
+                        那么我们想要的是立即结束本次循环，开始第10次循环。)*/
+            }else{
+                he = he+i;//he += i 也一样
+                i++;
+            }
+            console.log("到现在为止除掉个数是9的数字的和是:"+he);
+        }
+        alert("一到一百除掉个数是9的数字的和是:"+he);
+    </script>
+
+</body>
+</html>

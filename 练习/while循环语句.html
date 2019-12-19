@@ -45,6 +45,22 @@
        //求和思想
        //1:找一个变量来记录总和
        //2:把前一次的和加上新的值在赋值给变量
+
+
+
+       //输入用户名和密码，如果正确，提升正确，如果不对一直输入:while
+       var yonghuming = prompt("请输入用户名");
+       var mima = prompt("请输入密码");
+       while(true){
+           if(yonghuming=="799404203"&&mima=="799404203HWB123"){
+            alert("登陆成功");
+            break;//终止循环
+           }else{alert("用户名或密码错误请重新输入");
+           var yonghuming = prompt("请输入用户名");
+       var mima = prompt("请输入密码");
+           }
+       }
+       alert("over")
     </script>
 
 </body>
